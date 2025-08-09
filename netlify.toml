@@ -1,0 +1,10 @@
+
+[build]
+  publish = "."
+  command = ""
+
+[[redirects]]
+  from = "/v/:slug"
+  to = "/.netlify/functions/og-page/:slug"
+  status = 200
+  force = true

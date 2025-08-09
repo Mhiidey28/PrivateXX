@@ -1,0 +1,36 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PRIVATE</title>
+<link href="https://fonts.googleapis.com/css2?family=Revue:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header"><div class="site-title">PRIVATE</div></header>
+  <main class="container">
+    <div id="home-banner" class="banner"></div>
+    <div class="actions"><button id="addBtn" class="btn">Add Subpage</button></div>
+    <section id="grid" class="grid"></section>
+  </main>
+
+  <!-- Add Video Modal -->
+  <div id="modal" class="modal hidden" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <h2>Add Subpage</h2>
+      <form id="addForm">
+        <label>Title<br/><input name="title" required></label><br/>
+        <label>Thumbnail URL<br/><input name="thumbnail" placeholder="/assets/coming-soon.png"></label><br/>
+        <label>Iframe embed HTML<br/><textarea name="embed" rows="4" placeholder='<iframe ...></iframe>'></textarea></label><br/>
+        <label>Slug (optional)<br/><input name="slug" placeholder="my-video-slug"></label><br/>
+        <div style="margin-top:10px;"><button type="submit" class="btn">Create</button> <button type="button" id="cancelBtn" class="btn alt">Cancel</button></div>
+      </form>
+      <div id="status" style="margin-top:8px;color:#ddd"></div>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js/dist/umd/supabase.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

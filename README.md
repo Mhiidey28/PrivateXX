@@ -1,0 +1,1 @@
+Video site ready for Netlify + Supabase. See DEPLOY.md for setup steps.
